@@ -13,7 +13,7 @@
             <div class="header__wrapper">
                 <a href="index.html" class="logo-link"><img src="./img/logo.svg" alt="" class="logo"></a>
                 <nav class="header__nav-menu">
-                    <span class="close" id="close-modal">&times;</span>
+                    <span class="close" id="close-modal a768_show"></span>
                     <ul class="nav-menu__list">
                         <li class="nav-menu__item">
                             <a href="#!" class="nav-menu__link">Главная</a>
@@ -54,7 +54,7 @@
                     <p class="subinfo__text_big">+7 (831) 423-00-52</p>
                     <a href="#!" class="subinfo__text_small subinfo__link">Заказать обратный звонок</a>
                 </div>
-                <div class="burger-icon burger-btn">
+                <div class="burger-icon burger-btn a768_show">
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="line"></div>
@@ -81,7 +81,7 @@
         
                         <p class="first__subtitle first-text">Оплата только <span class="bold-text">после циклёвки и уборки в помещении</span></p>
 
-                        <button type="submit" class="first__btn green-btn calc-btn">
+                        <button type="submit" class="first__btn green-btn calc-btn modal-btn" data-modal="consultation">
                             <img src="./img/calc-btn.svg" alt="">
                             Получить расчет
                         </button>
@@ -106,7 +106,9 @@
         </section>
         <section class="advantages">
             <div class="wrapper">
-                <h3 class="section-title advantages__title">Циклёвка <span>быстрее и дешевле</span> чем замена паркета, а ещё:</h3>
+                <h3 class="section-title advantages__title">Циклёвка 
+                <span>быстрее и дешевле</span> чем замена паркета,
+                а ещё:</h3>
 
                 <p class="advantages__subtitle">Паркет из дуба (бука, ясеня и других ценных пород древесины) требует трепетного отношения при эксплуатации. Его замена – дорогостоящее удовольствие. Поэтому укладку нового паркета обычно рассматривают только в крайнем случае, во всех остальных <span class="bold-text">дешевле и быстрее</span> заказать циклевку, которая имеет ряд преимуществ:</p>
 
@@ -150,7 +152,7 @@
                         <p class="callback__title">Перезвоним в течении 4 минут</p>
                         <form class="callback__form">
                             <input type="tel" class="callback__input" placeholder="+7 (123) 444-00-00">
-                            <button type="submit" class="callback__btn green-btn">Получить консультацию</button>
+                            <button type="submit" class="callback__btn green-btn modal-btn" data-modal="consultation">Получить консультацию</button>
                         </form>
                         <p class="callback__subtitle">Консультация и составление 
                         сметы бесплатно</p>
@@ -317,7 +319,7 @@
     
                         <form class="callback__form examples__form">
                             <input type="tel" class="callback__input" placeholder="+7 (123) 444-00-00">
-                            <button type="submit" class="green-btn calc-btn">
+                            <button type="submit" class="green-btn calc-btn modal-btn" data-modal="consultation">
                                 <img src="./img/calc-btn.svg" alt="">
                                 Получить расчет
                             </button>
@@ -382,7 +384,7 @@
                     <p class="callback__title">Перезвоним в течении 4 минут</p>
                     <form class="callback__form">
                         <input type="tel" class="callback__input" placeholder="+7 (123) 444-00-00">
-                        <button type="submit" class="callback__btn green-btn">Получить консультацию</button>
+                        <button type="submit" class="callback__btn green-btn modal-btn" data-modal="consultation">Получить консультацию</button>
                     </form>
                 </div>
             </div>
@@ -878,6 +880,20 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal modal-consultation" data-modal="consultation">
+        <div class="modal__content">
+            <span class="modal__close close"></span>
+
+            <p class="modal__title">Получить консультацию</p>
+
+            <form class="modal__form">
+                <input type="tel" class="modal__form-input" placeholder="+7 (123) 444-00-00">
+                <button type="submit" class="modal__form-btn green-btn">Жду звонка</button>
+                <p class="modal__form-text">Заполняя поля формы, Вы даете согласие на обработку персональных данных</p>
+            </form>
+        </div>
+    </div>
 
     <script src="./js/fancybox.umd.js"></script>
     <script src="./js/script.js"></script>

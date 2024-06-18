@@ -56,4 +56,28 @@ window.addEventListener('DOMContentLoaded', () => {
         burgerMenu.classList.remove('show');
         document.body.style.overflow = '';
     });
+
+    // modal
+    const modals = document.querySelectorAll('.modal');
+    const modalBtns = document.querySelectorAll('.modal-btn');
+
+    modalBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            modals.forEach(modal => {
+                if (btn.getAttribute('data-modal') == modal.getAttribute('data-modal')) {
+                    modal.classList.add('show');
+                    document.body.style.overflow = 'hidden';
+                }
+
+                const modalClose = modal.querySelector('.modal__close');
+
+                modalClose.addEventListener('click', () => {
+                    modal.classList.remove('show');
+                    document.body.style.overflow = '';
+                });
+            });
+        });
+    });
+
+
 });
