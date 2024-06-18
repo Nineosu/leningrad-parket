@@ -995,6 +995,10 @@ input::placeholder {
     color: #201E1D80;
 }
 
+.a768_show {
+    display: none;
+}
+
 /* media */
 @media (max-width: 992px) {
     .header__link-btns {
@@ -1323,7 +1327,7 @@ input::placeholder {
         font-size: 18px;
         line-height: 23px;
     }
-    
+
     .footer__wrapper {
         grid-template-columns: 1fr;
     }
